@@ -12,7 +12,7 @@
 
 ## 以下内容转自知乎
 
-1. 先定义一些基础概念
+## 1. 先定义一些基础概念
 
 ### Program Errors
 
@@ -28,7 +28,7 @@
 - well behaved: 如果程序执行不可能出现forbidden behaviors, 则为well behaved。
 - ill behaved: 否则为ill behaved...
 
-2. 有了上面的概念，再讨论强、弱类型，静态、动态类型
+## 2. 有了上面的概念，再讨论强、弱类型，静态、动态类型
 
 ### 强、弱类型
 
@@ -42,7 +42,7 @@
 - 静态类型 statically: 如果在编译时拒绝ill behaved程序，则是statically typed;
 - 动态类型 dynamiclly: 如果在运行时拒绝ill behaviors, 则是dynamiclly typed。
 
-3. 误区
+## 3. 误区
 
 大家觉得C语言要写int a, int b之类的，Python不用写(可以直接写a, b)，所以C是静态，Python是动态。这么理解是不够准确的。譬如Ocaml是静态类型的，但是也可以不用明确地写出来。。Ocaml是静态隐式类型
 
@@ -51,7 +51,8 @@
 - 如果类型是语言语法的一部分，在是explicitly typed显式类型；
 - 如果类型通过编译时推导，是implicity typed隐式类型, 比如ML和Haskell
 
-4. 下面是些例子
+## 4. 下面是些例子
+
 - 无类型： 汇编弱
 - 类型、静态类型 ： C/C++
 - 弱类型、动态类型检查： Perl/PHP
