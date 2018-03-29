@@ -1,0 +1,10 @@
+{
+  "git.autofetch": true,
+  "explorer.confirmDelete": false,
+  "editor.tabSize": 2,
+  "explorer.confirmDragAndDrop": false,
+  "files.autoSave": "afterDelay",
+  "editor.fontSize": 18,
+  "python.linting.pylintEnabled": false,
+  "python.pythonPath": "python3"
+}
