@@ -1,0 +1,12 @@
+[user]
+        name = cuppar
+        email = cuppar.hzy@gmail.com
+[push]
+        default = matching
+[alias]
+        st = status
+        br = branch
+        ci = commit
+        co = checkout
+        unstage = reset HEAD
+        last = log -1
