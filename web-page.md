@@ -1,7 +1,7 @@
-2018-4-8  学术英语  何志颖  20151120237
-___
-
 # WEB PAGE
+
+_2018-4-8  学术英语  何志颖  20151120237_
+___
 
 - we use web page everyday, but
 - ***Do you really know it?***
@@ -24,21 +24,32 @@ ___
 ## How the web page work?
 
 - B/S: Browser/Server
-![](images/bs.png)
+
+![images/bs.png](images/bs.png)
+
 - MVC: Model-View-Controler
-![](images/mvc.png)
+
+![images/mvc.png](images/mvc.png)
+
 - HTTP protocol
-![](images/http.png)
+
+![images/http.png](images/http.png)
+
 - URL: Uniform Resourse Locator
-![](images/url.png)
+
+![images/url.png](images/url.png)
 
 ## How to make a web page?
 
 - if web page is a human:
-![](images/bone.png)
+
+![images/bone.png](images/bone.png)
+
 - HTML -- bone
 - CSS -- appearance
 - JAVASCRIPT -- muscle
-![](images/hcj.png)
+
+![images/hcj.png](images/hcj.png)
+
 ___
-2018-4-8  学术英语  何志颖  20151120237
+_ 2018-4-8  学术英语  何志颖  20151120237 _
