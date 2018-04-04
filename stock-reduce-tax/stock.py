@@ -56,6 +56,8 @@ while 1:
     tax_sell_yinhua_baodi = sell_cje_baodi*YIN_HUA
     # 卖出佣金(保底)
     tax_sell_yongjin_baodi = sell_cje_baodi*YONG_JIN
+    if tax_sell_yongjin_baodi < 5:
+        tax_sell_yongjin_baodi = 5
     # *卖出收入(保底)* 等于支出总成本
 
     # **真实卖出**
@@ -69,6 +71,8 @@ while 1:
     tax_sell_yinhua = sell_cje*YIN_HUA
     # 佣金
     tax_sell_yongjin = sell_cje*YONG_JIN
+    if tax_sell_yongjin < 5:
+        tax_sell_yongjin = 5
     # *卖出收入*
     sell_total = sell_cje-tax_sell_guohu-tax_sell_yinhua-tax_sell_yongjin
 
@@ -87,11 +91,11 @@ while 1:
     tax_total = tax_buy_guohu + tax_buy_yongjin + tax_sell_guohu\
         + tax_sell_yongjin + tax_sell_yinhua
     # 每股上税
-    tax_p_stock= tax_total/stock_num
+    tax_p_stock = tax_total/stock_num
     # 每股上税率
     tax_p_stock_precent = tax_p_stock/stock_price
     # 利润
-    win=sell_total-buy_total
+    win = sell_total-buy_total
 
     # output
     print()
@@ -119,6 +123,6 @@ while 1:
     print('买入成本： {0:.6f}'.format(buy_total))
     print('卖出收入： {0:.6f}'.format(sell_total))
     print('利润： {0:.6f}'.format(win))
-    
+
     line('')
     print()
