@@ -71,8 +71,8 @@ while 1:
     tax_sell_yinhua = sell_cje*YIN_HUA
     # 佣金
     tax_sell_yongjin = sell_cje*YONG_JIN
-    if tax_sell_yongjin<5:
-        tax_sell_yongjin=5
+    if tax_sell_yongjin < 5:
+        tax_sell_yongjin = 5
     # *卖出收入*
     sell_total = sell_cje-tax_sell_guohu-tax_sell_yinhua-tax_sell_yongjin
 
