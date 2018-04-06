@@ -16,7 +16,7 @@
 - sets
 - sorted sets
 
-## 安装(Ubuntu)
+## 安装、启动、关闭(Ubuntu)
 
 - 安装
 
@@ -51,3 +51,42 @@
 
         $ cat nohup.out
     ![nohup-out.png](images/nohup-out.png)
+
+- 通过 service 启动和关闭
+
+    启动服务
+
+        $ sudo service redis-server start
+
+    使用客户端
+
+        $ redis-cli
+
+    关闭服务
+
+        $ sudo service redis-server stop
+
+## 配置
+
+- 启动时使用配置文件
+
+        $ redis-server /etc/redis/redis.conf
+
+- 通过修改配置文件 /etc/redis/redis.conf 内容配置
+- 通过客户端命令进行配置
+
+        $ redis-cli
+        127.0.0.1:6379> config get [config-name]
+        1) "[config-name]"
+        2) "[value]"
+        127.0.0.1:6379> config set [config-name] [new-value]
+        OK
+    ![redis-config.png](images/redis-config.png)
+
+- 常用配置
+    
+    ![redis-prop1](images/redis-prop1.png)
+    ![redis-prop2](images/redis-prop2.png)
+    ![redis-prop3](images/redis-prop3.png)
+    ![redis-prop4](images/redis-prop4.png)
+    ![redis-prop5](images/redis-prop5.png)
