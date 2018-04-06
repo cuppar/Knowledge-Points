@@ -46,6 +46,7 @@
         $ jobs
         $ jobs -l
     ![nohup-jobs.png](images/nohup-jobs.png)
+
     后台进程的输出会重定向到nohup.out文件
 
         $ cat nohup.out
