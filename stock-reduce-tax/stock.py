@@ -3,7 +3,7 @@
 # ***** 股票计算器 *****
 
 # 常量 上税的比例
-YONG_JIN = 0.003  # 佣金=成交额×佣金率 (小于5元按5元算)
+YONG_JIN = 0.00025  # 佣金=成交额×佣金率 (小于5元按5元算)
 GUO_HU = 1000  # 过户费=股数/1000 (小于1元按1元算)
 YIN_HUA = 0.001  # 印花税=卖出价的0.001 (只在卖出时收取)
 
@@ -40,6 +40,8 @@ while 1:
         tax_buy_guohu = (stock_num/GUO_HU)
     else:
         tax_buy_guohu = 1
+    # !!!!!过户费算在佣金里了！！！！！！！
+    tax_buy_guohu=0
     # *总额*
     # 买入总成本
     buy_total = buy_cje+tax_buy_yongjin+tax_buy_guohu
