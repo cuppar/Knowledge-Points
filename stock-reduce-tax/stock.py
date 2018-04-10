@@ -118,8 +118,10 @@ while 1:
     print('真实每股上税率： {0:.6f}'.format(tax_p_stock_precent))
 
     line('保本')
-    print('每股涨： {0:.6f} 才能保本'.format(sell_cje_baodi/stock_num-stock_price))
-    print('就是涨到： {0:.6f}'.format(sell_cje_baodi/stock_num))
+    # print('每股涨： {0:.6f} 才能保本'.format(sell_cje_baodi/stock_num-stock_price))
+    # print('就是涨到： {0:.6f}'.format(sell_cje_baodi/stock_num))
+    print('每股涨： {0:.6f} 才能保本'.format(tax_p_stock_baodi))
+    print('就是涨到： {0:.6f}'.format(tax_p_stock_baodi+stock_price))
 
     line('盈利')
     print('买入成本： {0:.6f}'.format(buy_total))
